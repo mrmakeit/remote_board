@@ -1,0 +1,485 @@
+EESchema Schematic File Version 4
+LIBS:Remote_Board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Micro_SD_Card J6
+U 1 1 5BD00A2D
+P 8000 1800
+F 0 "J6" H 7950 2517 50  0000 C CNN
+F 1 "Micro_SD_Card" H 7950 2426 50  0000 C CNN
+F 2 "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5" H 9150 2100 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 8000 1800 50  0001 C CNN
+	1    8000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1900 6700 1900
+Text Label 6750 1900 0    50   ~ 0
+SPI_CLK
+Wire Wire Line
+	7100 2100 6700 2100
+Wire Wire Line
+	7100 1700 6700 1700
+Wire Wire Line
+	7100 1600 6700 1600
+Text Label 6750 1600 0    50   ~ 0
+SD_CS
+Text Label 6750 1700 0    50   ~ 0
+SPI_MOSI
+Text Label 6750 2100 0    50   ~ 0
+SPI_MISO
+$Comp
+L power:GND #PWR0114
+U 1 1 5BD479A6
+P 6600 2000
+F 0 "#PWR0114" H 6600 1750 50  0001 C CNN
+F 1 "GND" H 6605 1827 50  0000 C CNN
+F 2 "" H 6600 2000 50  0001 C CNN
+F 3 "" H 6600 2000 50  0001 C CNN
+	1    6600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0115
+U 1 1 5BD479FF
+P 6600 1800
+F 0 "#PWR0115" H 6600 1650 50  0001 C CNN
+F 1 "+3.3V" H 6615 1973 50  0000 C CNN
+F 2 "" H 6600 1800 50  0001 C CNN
+F 3 "" H 6600 1800 50  0001 C CNN
+	1    6600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2000 7100 2000
+Wire Wire Line
+	6600 1800 7100 1800
+$Comp
+L power:GND #PWR0116
+U 1 1 5BD4A74A
+P 8800 2500
+F 0 "#PWR0116" H 8800 2250 50  0001 C CNN
+F 1 "GND" H 8805 2327 50  0000 C CNN
+F 2 "" H 8800 2500 50  0001 C CNN
+F 3 "" H 8800 2500 50  0001 C CNN
+	1    8800 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2400 8900 2400
+Wire Wire Line
+	8900 2400 8900 2500
+$Comp
+L power:GND #PWR0103
+U 1 1 5BD4F23E
+P 9650 4400
+F 0 "#PWR0103" H 9650 4150 50  0001 C CNN
+F 1 "GND" H 9655 4227 50  0000 C CNN
+F 2 "" H 9650 4400 50  0001 C CNN
+F 3 "" H 9650 4400 50  0001 C CNN
+	1    9650 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5300 8800 5300
+Wire Wire Line
+	9350 4400 9650 4400
+Wire Wire Line
+	9650 4300 9350 4300
+$Comp
+L power:+BATT #PWR0106
+U 1 1 5BD08C66
+P 9650 4300
+F 0 "#PWR0106" H 9650 4150 50  0001 C CNN
+F 1 "+BATT" H 9665 4473 50  0000 C CNN
+F 2 "" H 9650 4300 50  0001 C CNN
+F 3 "" H 9650 4300 50  0001 C CNN
+	1    9650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5BD07AFB
+P 9150 4300
+F 0 "J1" H 9250 4450 50  0000 C CNN
+F 1 "Battery Connector" H 9250 4100 50  0000 C CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_502382-0270_1x02-1MP_P1.25mm_Vertical" H 9150 4300 50  0001 C CNN
+F 3 "~" H 9150 4300 50  0001 C CNN
+	1    9150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0105
+U 1 1 5BD0609C
+P 7850 4000
+F 0 "#PWR0105" H 7850 3850 50  0001 C CNN
+F 1 "VBUS" H 7865 4173 50  0000 C CNN
+F 2 "" H 7850 4000 50  0001 C CNN
+F 3 "" H 7850 4000 50  0001 C CNN
+	1    7850 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4900 8800 4000
+Wire Wire Line
+	8800 5300 8800 5200
+$Comp
+L power:+BATT #PWR0102
+U 1 1 5BD040D1
+P 8250 4350
+F 0 "#PWR0102" H 8250 4200 50  0001 C CNN
+F 1 "+BATT" H 8265 4523 50  0000 C CNN
+F 2 "" H 8250 4350 50  0001 C CNN
+F 3 "" H 8250 4350 50  0001 C CNN
+	1    8250 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4650 8250 4350
+$Comp
+L Device:C C1
+U 1 1 5BD03CCF
+P 8800 5050
+F 0 "C1" H 8915 5096 50  0000 L CNN
+F 1 "C4.7u" H 8915 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 8838 4900 50  0001 C CNN
+F 3 "~" H 8800 5050 50  0001 C CNN
+	1    8800 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 7850 4000
+Wire Wire Line
+	7850 4000 7850 4450
+Wire Wire Line
+	8800 4000 8450 4000
+Wire Wire Line
+	8450 4000 7850 4000
+Connection ~ 8450 4000
+Wire Wire Line
+	8450 4150 8450 4000
+Wire Wire Line
+	8250 4850 8450 4850
+Wire Wire Line
+	8450 4450 8450 4550
+$Comp
+L Device:R R2
+U 1 1 5BD02FE3
+P 8450 4700
+F 0 "R2" H 8520 4746 50  0000 L CNN
+F 1 "R470" H 8520 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 8380 4700 50  0001 C CNN
+F 3 "~" H 8450 4700 50  0001 C CNN
+	1    8450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5BD02E6A
+P 8450 4300
+F 0 "D1" V 8395 4378 50  0000 L CNN
+F 1 "LED" V 8486 4378 50  0000 L CNN
+F 2 "LED_SMD:LED_0201_0603Metric" H 8450 4300 50  0001 C CNN
+F 3 "~" H 8450 4300 50  0001 C CNN
+	1    8450 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 5300 7850 5400
+Connection ~ 7850 5300
+Wire Wire Line
+	7350 5300 7850 5300
+Wire Wire Line
+	7850 5050 7850 5300
+Wire Wire Line
+	7350 4850 7350 5000
+Wire Wire Line
+	7350 4850 7450 4850
+$Comp
+L Device:R R1
+U 1 1 5BD02911
+P 7350 5150
+F 0 "R1" H 7420 5196 50  0000 L CNN
+F 1 "R2k" H 7420 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 7280 5150 50  0001 C CNN
+F 3 "~" H 7350 5150 50  0001 C CNN
+	1    7350 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BD0289C
+P 7850 5400
+F 0 "#PWR0101" H 7850 5150 50  0001 C CNN
+F 1 "GND" H 7855 5227 50  0000 C CNN
+F 2 "" H 7850 5400 50  0001 C CNN
+F 3 "" H 7850 5400 50  0001 C CNN
+	1    7850 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Management:MCP73831-2-OT U1
+U 1 1 5BD01F84
+P 7850 4750
+F 0 "U1" H 8100 5000 50  0000 C CNN
+F 1 "MCP73831-2-OT" H 8200 4450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7900 4500 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 7700 4700 50  0001 C CNN
+	1    7850 4750
+	1    0    0    -1  
+$EndComp
+Text Label 5500 1550 2    50   ~ 0
+Row3
+Text Label 5500 1650 2    50   ~ 0
+Row2
+Text Label 5500 1750 2    50   ~ 0
+Row1
+Text Label 4800 1850 0    50   ~ 0
+Col5
+Text Label 4800 1750 0    50   ~ 0
+Col4
+Text Label 4800 1650 0    50   ~ 0
+Col3
+Text Label 4800 1550 0    50   ~ 0
+Col2
+Text Label 4800 1450 0    50   ~ 0
+Col1
+Wire Wire Line
+	5550 1550 5350 1550
+Wire Wire Line
+	5550 1650 5350 1650
+Wire Wire Line
+	5550 1750 5350 1750
+Wire Wire Line
+	4750 1850 4950 1850
+Wire Wire Line
+	4750 1750 4950 1750
+Wire Wire Line
+	4750 1650 4950 1650
+Wire Wire Line
+	4750 1550 4950 1550
+Wire Wire Line
+	4750 1450 4950 1450
+Text Label 4800 2050 0    50   ~ 0
+SD_CS
+Wire Wire Line
+	4750 2050 5000 2050
+Text Label 4800 2150 0    50   ~ 0
+LCD_CS
+Wire Wire Line
+	4750 2150 5000 2150
+Text Label 4800 2250 0    50   ~ 0
+SPI_MOSI
+Wire Wire Line
+	4750 2250 5000 2250
+Text Label 4800 2350 0    50   ~ 0
+SPI_MISO
+Wire Wire Line
+	4750 2350 5000 2350
+Wire Wire Line
+	5450 2250 5550 2250
+Wire Wire Line
+	5450 2000 5450 2250
+Wire Wire Line
+	5400 2000 5450 2000
+$Comp
+L power:+3.3V #PWR0112
+U 1 1 5BD39158
+P 5400 2000
+F 0 "#PWR0112" H 5400 1850 50  0001 C CNN
+F 1 "+3.3V" H 5415 2173 50  0000 C CNN
+F 2 "" H 5400 2000 50  0001 C CNN
+F 3 "" H 5400 2000 50  0001 C CNN
+	1    5400 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1050 4900 1100
+Wire Wire Line
+	4750 1050 4900 1050
+$Comp
+L power:GND #PWR0109
+U 1 1 5BD282C2
+P 4900 1100
+F 0 "#PWR0109" H 4900 850 50  0001 C CNN
+F 1 "GND" H 4905 927 50  0000 C CNN
+F 2 "" H 4900 1100 50  0001 C CNN
+F 3 "" H 4900 1100 50  0001 C CNN
+	1    4900 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2350 5400 2300
+Wire Wire Line
+	5550 2350 5400 2350
+$Comp
+L power:+BATT #PWR0108
+U 1 1 5BD24F32
+P 5400 2300
+F 0 "#PWR0108" H 5400 2150 50  0001 C CNN
+F 1 "+BATT" H 5415 2473 50  0000 C CNN
+F 2 "" H 5400 2300 50  0001 C CNN
+F 3 "" H 5400 2300 50  0001 C CNN
+	1    5400 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1450 5450 1450
+Wire Wire Line
+	5450 1050 5450 1450
+Wire Wire Line
+	5550 1050 5450 1050
+Text Label 5350 1450 2    50   ~ 0
+SPI_CLK
+Wire Wire Line
+	5400 1150 5400 1050
+$Comp
+L power:VBUS #PWR0104
+U 1 1 5BD05432
+P 5400 1050
+F 0 "#PWR0104" H 5400 900 50  0001 C CNN
+F 1 "VBUS" H 5415 1223 50  0000 C CNN
+F 2 "" H 5400 1050 50  0001 C CNN
+F 3 "" H 5400 1050 50  0001 C CNN
+	1    5400 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J3
+U 1 1 5BD000C0
+P 5150 2750
+F 0 "J3" H 5256 3128 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 5256 3037 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical" H 5150 2750 50  0001 C CNN
+F 3 "~" H 5150 2750 50  0001 C CNN
+	1    5150 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x14_Male J5
+U 1 1 5BCFFFD9
+P 5750 1750
+F 0 "J5" H 5856 2528 50  0000 C CNN
+F 1 "Conn_01x14_Male" H 5856 2437 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x14_P1.00mm_Vertical" H 5750 1750 50  0001 C CNN
+F 3 "~" H 5750 1750 50  0001 C CNN
+	1    5750 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x14_Male J2
+U 1 1 5BCFFF63
+P 4550 1650
+F 0 "J2" H 4656 2428 50  0000 C CNN
+F 1 "Conn_01x14_Male" H 4656 2337 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x14_P1.00mm_Vertical" H 4550 1650 50  0001 C CNN
+F 3 "~" H 4550 1650 50  0001 C CNN
+	1    4550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 5BCFFD8A
+P 5200 1150
+F 0 "J4" H 5306 1328 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 5306 1237 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 5200 1150 50  0001 C CNN
+F 3 "~" H 5200 1150 50  0001 C CNN
+	1    5200 1150
+	1    0    0    1   
+$EndComp
+Text Label 3550 1800 0    50   ~ 0
+Col5
+Text Label 3550 1900 0    50   ~ 0
+Col4
+Text Label 3550 2100 0    50   ~ 0
+Col2
+Text Label 3550 2000 0    50   ~ 0
+Col3
+Text Label 3550 2200 0    50   ~ 0
+Col1
+Text Label 3550 1450 0    50   ~ 0
+Row1
+Text Label 3550 1350 0    50   ~ 0
+Row2
+Text Label 3550 1250 0    50   ~ 0
+Row3
+Wire Wire Line
+	3500 1250 3700 1250
+Wire Wire Line
+	3500 1350 3700 1350
+Wire Wire Line
+	3500 1450 3700 1450
+Wire Wire Line
+	3500 1800 3700 1800
+Wire Wire Line
+	3500 1900 3700 1900
+Wire Wire Line
+	3500 2000 3700 2000
+Wire Wire Line
+	3500 2100 3700 2100
+Wire Wire Line
+	3500 2200 3700 2200
+NoConn ~ 3500 1150
+NoConn ~ 3500 1050
+$Comp
+L Connector:Conn_01x05_Female J8
+U 1 1 5BD537B2
+P 3300 2000
+F 0 "J8" H 3194 1575 50  0000 C CNN
+F 1 "COL_INPUT" H 3194 1666 50  0000 C CNN
+F 2 "Connector_FFC-FPC:TE_84952-5_1x05-1MP_P1.0mm_Horizontal" H 3300 2000 50  0001 C CNN
+F 3 "~" H 3300 2000 50  0001 C CNN
+	1    3300 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x05_Female J7
+U 1 1 5BD5324B
+P 3300 1250
+F 0 "J7" H 3194 825 50  0000 C CNN
+F 1 "ROW_INPUT" H 3194 916 50  0000 C CNN
+F 2 "Connector_FFC-FPC:TE_84952-5_1x05-1MP_P1.0mm_Horizontal" H 3300 1250 50  0001 C CNN
+F 3 "~" H 3300 1250 50  0001 C CNN
+	1    3300 1250
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	3850 650  3850 2400
+Wire Notes Line
+	3050 2400 3050 650 
+Text Notes 3150 2350 0    50   ~ 0
+LCD Connectors
+Wire Notes Line
+	3050 2400 3850 2400
+Wire Notes Line
+	3850 650  3050 650 
+$Sheet
+S 950  3800 3550 3050
+U 5BD945BE
+F0 "LCD Control" 50
+F1 "file5BD945BD.sch" 50
+F2 "LCD_CS" I R 4500 4000 50 
+F3 "SPI_MISO" O R 4500 4150 50 
+$EndSheet
+Wire Wire Line
+	4500 4000 4800 4000
+Wire Wire Line
+	4500 4150 4800 4150
+Text Label 4550 4150 0    50   ~ 0
+SPI_MISO
+Text Label 4550 4000 0    50   ~ 0
+LCD_CS
+$EndSCHEMATC

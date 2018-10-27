@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Adafruit_RA8875_TFT_Breakout-eagle-import)(type Legacy)(uri /home/blixa/projects/Remote_Board/Adafruit_RA8875_TFT_Breakout-eagle-import.lib)(options "")(descr ""))
+  (lib (name pic_programmer-cache)(type Legacy)(uri /home/blixa/Downloads/pic_programmer-cache.lib)(options "")(descr ""))
+)

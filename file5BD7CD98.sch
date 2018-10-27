@@ -1,0 +1,175 @@
+EESchema Schematic File Version 4
+LIBS:Remote_Board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery_Management:MCP73831-2-OT U?
+U 1 1 5BD82619
+P 1550 1800
+F 0 "U?" H 1800 2050 50  0000 C CNN
+F 1 "MCP73831-2-OT" H 1900 1500 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1600 1550 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 1400 1750 50  0001 C CNN
+	1    1550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BD82620
+P 1550 2450
+F 0 "#PWR?" H 1550 2200 50  0001 C CNN
+F 1 "GND" H 1555 2277 50  0000 C CNN
+F 2 "" H 1550 2450 50  0001 C CNN
+F 3 "" H 1550 2450 50  0001 C CNN
+	1    1550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BD82626
+P 1050 2200
+F 0 "R?" H 1120 2246 50  0000 L CNN
+F 1 "R2k" H 1120 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 980 2200 50  0001 C CNN
+F 3 "~" H 1050 2200 50  0001 C CNN
+	1    1050 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1900 1150 1900
+Wire Wire Line
+	1050 1900 1050 2050
+Wire Wire Line
+	1550 2100 1550 2350
+Wire Wire Line
+	1050 2350 1550 2350
+Connection ~ 1550 2350
+Wire Wire Line
+	1550 2350 1550 2450
+$Comp
+L Device:LED D?
+U 1 1 5BD82633
+P 2150 1350
+F 0 "D?" V 2095 1428 50  0000 L CNN
+F 1 "LED" V 2186 1428 50  0000 L CNN
+F 2 "LED_SMD:LED_0201_0603Metric" H 2150 1350 50  0001 C CNN
+F 3 "~" H 2150 1350 50  0001 C CNN
+	1    2150 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BD8263A
+P 2150 1750
+F 0 "R?" H 2220 1796 50  0000 L CNN
+F 1 "R470" H 2220 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 2080 1750 50  0001 C CNN
+F 3 "~" H 2150 1750 50  0001 C CNN
+	1    2150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1500 2150 1600
+Wire Wire Line
+	1950 1900 2150 1900
+Wire Wire Line
+	2150 1200 2150 1050
+Wire Wire Line
+	1550 1050 1550 1500
+$Comp
+L Device:C C?
+U 1 1 5BD82645
+P 2500 2100
+F 0 "C?" H 2615 2146 50  0000 L CNN
+F 1 "C4.7u" H 2615 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 2538 1950 50  0001 C CNN
+F 3 "~" H 2500 2100 50  0001 C CNN
+	1    2500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1050 1550 1050
+Wire Wire Line
+	1950 1700 1950 1400
+$Comp
+L power:+BATT #PWR?
+U 1 1 5BD8264E
+P 1950 1400
+F 0 "#PWR?" H 1950 1250 50  0001 C CNN
+F 1 "+BATT" H 1965 1573 50  0000 C CNN
+F 2 "" H 1950 1400 50  0001 C CNN
+F 3 "" H 1950 1400 50  0001 C CNN
+	1    1950 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2350 2500 2250
+Wire Wire Line
+	2500 1950 2500 1050
+Wire Wire Line
+	2500 1050 2150 1050
+Connection ~ 2150 1050
+$Comp
+L power:VBUS #PWR?
+U 1 1 5BD82658
+P 1550 1050
+F 0 "#PWR?" H 1550 900 50  0001 C CNN
+F 1 "VBUS" H 1565 1223 50  0000 C CNN
+F 2 "" H 1550 1050 50  0001 C CNN
+F 3 "" H 1550 1050 50  0001 C CNN
+	1    1550 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 1050
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BD8265F
+P 2850 1350
+F 0 "J?" H 2950 1500 50  0000 C CNN
+F 1 "Battery Connector" H 2950 1150 50  0000 C CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_502382-0270_1x02-1MP_P1.25mm_Vertical" H 2850 1350 50  0001 C CNN
+F 3 "~" H 2850 1350 50  0001 C CNN
+	1    2850 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5BD82666
+P 3350 1350
+F 0 "#PWR?" H 3350 1200 50  0001 C CNN
+F 1 "+BATT" H 3365 1523 50  0000 C CNN
+F 2 "" H 3350 1350 50  0001 C CNN
+F 3 "" H 3350 1350 50  0001 C CNN
+	1    3350 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1350 3050 1350
+Wire Wire Line
+	3050 1450 3350 1450
+Wire Wire Line
+	1550 2350 2500 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5BD8266F
+P 3350 1450
+F 0 "#PWR?" H 3350 1200 50  0001 C CNN
+F 1 "GND" H 3355 1277 50  0000 C CNN
+F 2 "" H 3350 1450 50  0001 C CNN
+F 3 "" H 3350 1450 50  0001 C CNN
+	1    3350 1450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
